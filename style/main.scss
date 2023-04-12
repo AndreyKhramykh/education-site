@@ -1,0 +1,107 @@
+@import url(homeStyle.css);
+@import url(courseStyle.css);
+@import url(root.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+nav {
+  z-index: 2;
+  color: bisque;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: fixed;
+  width: 100%;
+  min-height: var(--navHeight);
+  background: linear-gradient(
+    to right,
+    rgb(91, 77, 109, 0.8) 0%,
+    rgb(106, 138, 205, 0.8) 25%,
+    rgb(134, 148, 167, 0.8) 50%,
+    rgb(151, 130, 106, 0.8) 75%
+  );
+}
+
+nav button {
+  transition-duration: 300ms;
+  color: bisque;
+
+  &:hover {
+    filter: brightness(0.2);
+    transform: scale(1.2);
+  }
+}
+
+main {
+  background-image: url(../images/mainBackground.png);
+  min-height: 100vh;
+  background-size: 100% 100%;
+}
+
+footer {
+  color: bisque;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(
+    to right,
+    rgb(91, 77, 109) 0%,
+    rgb(106, 138, 205) 25%,
+    rgb(134, 148, 167) 50%,
+    rgb(151, 130, 106) 75%
+  );
+}
+
+footer div:first-child {
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition-duration: 300ms;
+  &:hover {
+    filter: brightness(0.2);
+    transform: scale(1.2);
+  }
+}
+
+.nav-button-selected {
+  font-weight: 800;
+  color: var(--txtColorMain);
+}
+
+.in-progress {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  color: bisque;
+  height: 100vh;
+  font-size: 4em;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="icon" href="../images/icon.png" />
+    <link rel="stylesheet" href="../style/media.css">
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"><button>Home</button></a>
+      <a href="../pages/courses.html"
+        ><button class="nav-button-selected">Courses</button></a
+      >
+      <a href="../pages/aboutUs.html"><button>About Us</button></a>
+      <a href="../pages/contactUs.html"><button>Contact Us</button></a>
+    </nav>
+    <main>
+      <div class="course__content">
+        <div class="course__filter-menu">
+          <div>
+            <input id="search-field" type="search" />
+            <button class="search-button">Search</button>
+          </div>
+          <div>
+            <select name="science" id="sciencesMenu">
+              <option value="allScience" selected>All science courses</option>
+              <option value="math">Math</option>
+              <option value="chemie">Chemie</option>
+              <option value="art">Art</option>
+              <option value="history">History</option>
+            </select>
+            <select name="level" id="levelsMenu">
+              <option value="allLevel" selected>All levels</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+            <button class="accept-button">Accept</button>
+          </div>
+        </div>
+        <div class="course__card allScience allLevel math advanced">
+          <img src="../images/math.png" alt="" />
+          <h3>Higher mathematics course</h3>
+          <h5 class="course__math">Mathematics</h5>
+          <p>Brilliant math course</p>
+          <h7>Level - Advanced</h7>
+        </div>
+        <div class="course__card allScience allLevel art beginner">
+          <img src="../images/art.png" alt="" />
+          <h3>Drawing for beginners</h3>
+          <h5 class="course__art">Art</h5>
+          <p>Brilliant art course</p>
+          <h7>Level - Beginner</h7>
+        </div>
+        <div class="course__card allScience allLevel chemie intermediate">
+          <img src="../images/chemie.png" alt="" />
+          <h3>Organic chemistry</h3>
+          <h5 class="course__chemie">Chemie</h5>
+          <p>Brilliant chemie course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+        <div class="course__card allScience allLevel history intermediate">
+          <img src="../images/history.png" alt="" />
+          <h3>History of ancient Rome</h3>
+          <h5 class="course__history">History</h5>
+          <p>Brilliant history course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+        <div class="course__card allScience allLevel art intermediate">
+          <img src="../images/art.png" alt="" />
+          <h3>Landscape drawing</h3>
+          <h5 class="course__art">Art</h5>
+          <p>Brilliant art course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+        <div class="course__card allScience allLevel math beginner">
+          <img src="../images/math.png" alt="" />
+          <h3>Math for beginners</h3>
+          <h5 class="course__math">Mathematics</h5>
+          <p>Brilliant math course</p>
+          <h7>Level - Beginner</h7>
+        </div>
+        <div class="course__card allScience allLevel history intermediate">
+          <img src="../images/history.png" alt="" />
+          <h3>History of ancient Greece</h3>
+          <h5 class="course__history">History</h5>
+          <p>Brilliant history course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+        <div class="course__card allScience allLevel chemie intermediate">
+          <img src="../images/chemie.png" alt="" />
+          <h3>Non-organic chemistry</h3>
+          <h5 class="course__chemie">Chemie</h5>
+          <p>Brilliant chemie course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+        <div class="course__card allScience allLevel chemie beginner">
+          <img src="../images/chemie.png" alt="" />
+          <h3>Chemie for beginners</h3>
+          <h5 class="course__chemie">Chemie</h5>
+          <p>Brilliant chemie course</p>
+          <h7>Level - Beginner</h7>
+        </div>
+        <div class="course__card allScience allLevel history advanced">
+          <img src="../images/history.png" alt="" />
+          <h3>Modern history</h3>
+          <h5 class="course__history">History</h5>
+          <p>Brilliant history course</p>
+          <h7>Level - Advanced</h7>
+        </div>
+        <div class="course__card allScience allLevel art advanced">
+          <img src="../images/art.png" alt="" />
+          <h3>Drawing portraits</h3>
+          <h5 class="course__art">Art</h5>
+          <p>Brilliant art course</p>
+          <h7>Level - Advanced</h7>
+        </div>
+
+        <div class="course__card allScience allLevel math intermediate">
+          <img src="../images/math.png" alt="" />
+          <h3>Geometry</h3>
+          <h5 class="course__math">Mathematics</h5>
+          <p>Brilliant math course</p>
+          <h7>Level - Intermediate</h7>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>&copy</p>
+        <p>All rights reserved</p>
+      </div>
+      <div class="footer__icons-container">
+        <img src="../images/facebook-brands.svg" alt="" />
+        <img src="../images/instagram-brands.svg" alt="" />
+        <img src="../images/telegram-brands.svg" alt="" />
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
